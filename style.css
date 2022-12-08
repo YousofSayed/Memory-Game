@@ -1,0 +1,127 @@
+/* start  global style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   height: 100vh;
+    width: 100%;
+    
+}
+/* End  global style  */
+
+/* start time  */
+.time{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    background-color: springgreen;
+    font-family: bold;
+    font-size: 30px;
+}
+/* end time  */
+
+/* start score  */
+.score{
+    height: 7%;
+     width: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    border-top: 10px solid #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: springgreen;
+}
+/* end score  */
+
+/* start game  */
+.game-area{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 10%;
+    height: 70%;
+    /* transform: translatey(-100%); */
+    display: grid;
+    place-items: center;
+}
+
+.game-area .container{
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap;
+    width: 500px;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+    perspective: 600px;
+    -moz-perspective: 600px;
+    position: absolute;
+}
+
+.game-area .container .box{
+    position: absolute;
+    border: 3px solid springgreen;
+    width: 31%;
+    height: 25%;
+    max-width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+    cursor: pointer;
+    user-select: none;
+    /* transform: rotateY(-180deg); */
+
+}
+
+
+.front{
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    font-size: 33px;
+    font-weight: bold;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    /* transform: rotateY(); */
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(max-width:767px){
+    .game-area .container{
+        width: 300px;
+    } 
+}
+
+
+/* end game  */
+
+/* start footer  */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:springgreen;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    display: grid;
+    place-items: center;
+}
+/* end footer  */
